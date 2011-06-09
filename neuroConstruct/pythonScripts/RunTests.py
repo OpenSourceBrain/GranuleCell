@@ -79,9 +79,9 @@ def testAll(argv=None):
     spikeTimesToCheck = {'Gran_0': [108.25, 135.861, 161.793, 187.234, 212.362, \
                                     237.349, 262.302, 287.2, 312.079, 336.969, \
                                     361.881, 386.779, 411.68, 436.46, 461.4, \
-                                    486.3, 511.2, 536.1, 561.05, 586]}
+                                    486.3, 511.2, 536.15, 561.05, 586]}
     
-    spikeTimeAccuracy = 0.1
+    spikeTimeAccuracy = 0.09
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)
