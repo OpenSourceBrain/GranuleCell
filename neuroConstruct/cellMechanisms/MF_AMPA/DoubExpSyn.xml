@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema  ../../Schemata/v1.3beta/Level2/ChannelML_v1.3.xsd" units="Physiological Units">
+<channelml xmlns="http://morphml.org/channelml/schema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:meta="http://morphml.org/metadata/schema"
+    xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level2/ChannelML_v1.8.1.xsd"
+    units="SI Units">
     
     <meta:notes>ChannelML file describing a synaptic mechanism</meta:notes>
     
@@ -27,7 +31,7 @@
             <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/receptors2.asp</meta:uri>
         </meta:neuronDBref>
         
-        <doub_exp_syn max_conductance="1.1238527E-7" rise_time="0.03" decay_time="0.5" reversal_potential="0"/>
+        <doub_exp_syn max_conductance="1.1238527e-10" rise_time="3e-5" decay_time="5e-4" reversal_potential="0"/>
     
     </synapse_type>
     
