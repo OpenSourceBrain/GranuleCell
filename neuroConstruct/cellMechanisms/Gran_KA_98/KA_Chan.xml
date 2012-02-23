@@ -66,7 +66,7 @@
                 <closed_state id="h0"/>
                 <open_state id="h"/>
                      
-                <time_course name="tau" from="h0" to="h" expr_form="generic" expr="1e-3 * (10.8 + (0.03 * v * 1e3) + (1 / (57.9 * (exp (v *0.127 * 1e3)) + (134e-6 * (exp (v * -0.059 * 1e3))))))" />
+                <time_course name="tau" from="h0" to="h" expr_form="generic" expr="0.001 * (10.8 + (30 * v) + (1 / (57.9 * (exp (v * 127)) + (134e-6 * (exp (v * (-59)))))))" />
                 <steady_state name="inf" from="h0" to="h" expr_form="sigmoid" rate="1" scale="0.0084" midpoint="-0.0788" />
                     
             </gate>

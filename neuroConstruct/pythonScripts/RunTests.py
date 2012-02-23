@@ -39,8 +39,9 @@ simConfigs = []
 simConfigs.append("OnlyVoltage")
 
 simDt =                 0.001
+simDtOverride =         {"LEMS":0.00025}
 
-simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI"]
+simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI", "LEMS"]
 
 varTimestepNeuron =     True
 varTimestepTolerance =  0.00001
@@ -50,6 +51,7 @@ plotVoltageOnly =       True
 runInBackground =       True
 analyseSims =           True
 verbose =               False
+numConcurrentSims =     3
 
 #############################################
 
@@ -60,12 +62,13 @@ def testAll(argv=None):
 
     print "Loading a project from "+ projFile.getCanonicalPath()
 
-
     simManager = nc.SimulationManager(projFile,
-                                      verbose = verbose)
+                                      verbose = verbose,
+                                      numConcurrentSims = numConcurrentSims)
 
     simManager.runMultipleSims(simConfigs =           simConfigs,
                                simDt =                simDt,
+                               simDtOverride =        simDtOverride,
                                simulators =           simulators,
                                runInBackground =      runInBackground,
                                varTimestepNeuron =    varTimestepNeuron,
@@ -82,7 +85,7 @@ def testAll(argv=None):
                                     361.881, 386.779, 411.68, 436.46, 461.4, \
                                     486.3, 511.2, 536.1, 561.05, 586]}
     
-    spikeTimeAccuracy = 0.1
+    spikeTimeAccuracy = 0.25
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)
