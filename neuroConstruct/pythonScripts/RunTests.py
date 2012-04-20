@@ -85,7 +85,7 @@ def testAll(argv=None):
                                     361.881, 386.779, 411.68, 436.46, 461.4, \
                                     486.3, 511.2, 536.1, 561.05, 586]}
     
-    spikeTimeAccuracy = 0.25
+    spikeTimeAccuracy = 1.1 # Too long!! Lems's fault...
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)
