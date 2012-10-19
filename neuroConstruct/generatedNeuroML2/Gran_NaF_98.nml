@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 http://neuroml.svn.sourceforge.net/viewvc/neuroml/NeuroML2/Schemas/NeuroML2/NeuroML_v2alpha.xsd" id="Gran_NaF_98">
+
+    <notes>A channel from Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in a 
+    Detailed Network Model of the Cerebellar Granule Cell Layer</notes>
+
+    <ionChannel id="Gran_NaF_98" conductance="10pS" type="ionChannelHH" species="na">
+
+        <notes>Fast inactivating Na+ channel</notes>
+
+        <gate id="m" type="gateHH" instances="3">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
+            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <forwardRate type="HHExpRate" rate="1500per_s" scale="0.012345679V" midpoint="-0.028999999999999998V"/>
+            <reverseRate type="HHExpRate" rate="1500per_s" scale="-0.0151515V" midpoint="-0.028999999999999998V"/>
+            <timeCourse type="Gran_NaF_98_m_tau_tau"/>
+        </gate>
+
+        <gate id="h" type="gateHH" instances="1">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
+            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <forwardRate type="HHExpRate" rate="120per_s" scale="-0.01123596V" midpoint="-0.04V"/>
+            <reverseRate type="HHExpRate" rate="120per_s" scale="0.01123596V" midpoint="-0.04V"/>
+            <timeCourse type="Gran_NaF_98_h_tau_tau"/>
+        </gate>
+                            
+    </ionChannel>
+
+    <ComponentType name="Gran_NaF_98_m_tau_tau" extends="baseVoltageDepTime">
+        <Constant name="TIME_SCALE" dimension="time" value="1 s"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 V"/>
+        <Constant name="offset" dimension="voltage" value="0.010V"/>
+        <Requirement name="alpha" dimension="per_time"/>
+        <Requirement name="beta" dimension="per_time"/>
+
+        <Behavior>
+            <DerivedVariable name="V" dimension="none" value="(v - offset) / VOLT_SCALE"/>
+            <DerivedVariable name="t" exposure="t" dimension="time" value="( 0.00005 ) * TIME_SCALE" valueCondition="1/(alpha + beta)  .lt. ( 0.00005 )" valueIfFalse="( 1/(alpha + beta)) * TIME_SCALE"/>
+        </Behavior>
+
+    </ComponentType>
+
+    <ComponentType name="Gran_NaF_98_h_tau_tau" extends="baseVoltageDepTime">
+        <Constant name="TIME_SCALE" dimension="time" value="1 s"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 V"/>
+        <Constant name="offset" dimension="voltage" value="0.010V"/>
+        <Requirement name="alpha" dimension="per_time"/>
+        <Requirement name="beta" dimension="per_time"/>
+
+        <Behavior>
+            <DerivedVariable name="V" dimension="none" value="(v - offset) / VOLT_SCALE"/>
+            <DerivedVariable name="t" exposure="t" dimension="time" value="( 0.000225 ) * TIME_SCALE" valueCondition="1/(alpha + beta)  .lt. ( 0.000225 )" valueIfFalse="( 1/(alpha + beta)) * TIME_SCALE"/>
+        </Behavior>
+
+    </ComponentType>
+
+</neuroml>

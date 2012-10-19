@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 http://neuroml.svn.sourceforge.net/viewvc/neuroml/NeuroML2/Schemas/NeuroML2/NeuroML_v2alpha.xsd" id="Gran_CaHVA_98">
+
+    <notes>A channel from Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in a 
+    Detailed Network Model of the Cerebellar Granule Cell Layer</notes>
+
+    <ionChannel id="Gran_CaHVA_98" conductance="10pS" type="ionChannelHH" species="ca">
+
+        <notes>A High Voltage Activated Ca2+ channel</notes>
+
+        <gate id="m" type="gateHH" instances="2">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
+            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <forwardRate type="HHSigmoidRate" rate="1600per_s" scale="0.01388888889V" midpoint="0.015V"/>
+            <reverseRate type="HHExpLinearRate" rate="100per_s" scale="-0.005V" midpoint="0.0011000000000000003V"/>
+        </gate>
+
+        <gate id="h" type="gateHH" instances="1">
+            <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
+            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <forwardRate type="Gran_CaHVA_98_h_alpha_rate"/>
+            <reverseRate type="Gran_CaHVA_98_h_beta_rate"/>
+        </gate>
+                            
+    </ionChannel>
+
+    <ComponentType name="Gran_CaHVA_98_h_alpha_rate" extends="baseVoltageDepRate">
+        <Constant name="TIME_SCALE" dimension="time" value="1 s"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 V"/>
+        <Constant name="offset" dimension="voltage" value="0.010V"/>
+
+        <Behavior>
+            <DerivedVariable name="V" dimension="none" value="(v - offset) / VOLT_SCALE"/>
+            <DerivedVariable name="r" exposure="r" dimension="per_time" value="( 5.0 ) / TIME_SCALE" valueCondition="V   .lt. ( -0.060 )" valueIfFalse="( 5 * (exp (-50 * (V - (-0.060))))) / TIME_SCALE"/>
+        </Behavior>
+
+    </ComponentType>
+
+    <ComponentType name="Gran_CaHVA_98_h_beta_rate" extends="baseVoltageDepRate">
+        <Constant name="TIME_SCALE" dimension="time" value="1 s"/>
+        <Constant name="VOLT_SCALE" dimension="voltage" value="1 V"/>
+        <Constant name="offset" dimension="voltage" value="0.010V"/>
+
+        <Behavior>
+            <DerivedVariable name="V" dimension="none" value="(v - offset) / VOLT_SCALE"/>
+            <DerivedVariable name="r" exposure="r" dimension="per_time" value="( 0 ) / TIME_SCALE" valueCondition="V   .lt. ( -0.060 )" valueIfFalse="( 5 - (5 * (exp (-50 * (V - (-0.060)))))) / TIME_SCALE"/>
+        </Behavior>
+
+    </ComponentType>
+
+</neuroml>

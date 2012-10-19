@@ -1,0 +1,35 @@
+<Lems>
+
+    <DefaultRun component="sim1" reportFile="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../simulations/OnlyVoltage__L/simulator.props" timesFile="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../simulations/OnlyVoltage__L/time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentClass definitions-->
+
+    <Include file="NeuroML2CoreTypes/Cells.xml"/>
+    <Include file="NeuroML2CoreTypes/Networks.xml"/>
+    <Include file="NeuroML2CoreTypes/Simulation.xml"/>
+
+    <Include file="NeuroML2CoreTypes/PyNN.xml"/>
+
+    
+
+        <!--Include the generated NeuroML 2 files-->
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Granule_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/GranPassiveCond.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_KCa_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_CaHVA_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_NaF_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_KA_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_H_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_CaPool_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/Gran_KDr_98.nml"/>
+    <Include file="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../generatedNeuroML/GranuleCell.nml"/>
+    
+
+    <Simulation id="sim1" length="700.0ms" step="2.5E-3ms" target="network_GranuleCell">
+        
+        <Display id="GraphWin_0" title="GranuleCell: OnlyVoltage, Gran, VOLTAGE" timeScale="1ms">
+            <Line id="Gran_v" quantity="Gran[0]/v" scale="1 mV" color="#000000" save="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/pythonScripts/../simulations/OnlyVoltage__L/Gran_0.dat"/>
+        </Display>
+    </Simulation>
+
+</Lems>
