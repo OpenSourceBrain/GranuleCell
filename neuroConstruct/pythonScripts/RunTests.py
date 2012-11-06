@@ -41,6 +41,7 @@ simConfigs.append("OnlyVoltage")
 simDt =                 0.001
 simDtOverride =         {"LEMS":0.00025}
 
+#simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI", "LEMS"]
 simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI"]
 
 varTimestepNeuron =     True
@@ -84,8 +85,9 @@ def testAll(argv=None):
                                     237.349, 262.302, 287.2, 312.079, 336.969, \
                                     361.881, 386.779, 411.68, 436.46, 461.4, \
                                     486.3, 511.2, 536.1, 561.05, 586]}
-    
-    spikeTimeAccuracy = 1.1 # Too long!! Lems's fault...
+
+    #spikeTimeAccuracy = 1.1 # Too long!! Lems's fault...
+    spikeTimeAccuracy = 0.25 
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)
