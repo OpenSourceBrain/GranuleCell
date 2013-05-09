@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  http://neuroml.svn.sourceforge.net/viewvc/neuroml/NeuroML2/Schemas/NeuroML2/NeuroML_v2alpha.xsd" id="network_GranuleCell">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/master/Schemas/NeuroML2/NeuroML_v2beta.xsd" id="network_GranuleCell">
 
 <notes>
 
-Network structure (NeuroML 2.x) for project: GranuleCell saved with neuroConstruct v1.6.0 on: 11:21:25, 23-Aug-12
+Network structure (NeuroML 2beta) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 21:51:08, 09-May-13
 
 Cell Group: Gran contains 1 cells
 
@@ -12,21 +12,27 @@ Cell Group: Gran contains 1 cells
 
 
 
-    <pulseGenerator id="Gran_10pA" delay="100.0ms" duration="500.0ms" amplitude="1.0E-5uA"/>
+    <pulseGenerator id="Gran_10pA" delay="0.1s" duration="0.5s" amplitude="1.0E-11A"/>
 
     
     <network id="network_GranuleCell">
 
         <extracellularProperties temperature="32.0 degC"/>
 
-        <population id="Gran" component="Granule_98" size="1"/>
+        <population id="Gran" component="Granule_98" type="populationList">
+            <instance id="0">
+                <location x="76.35782" y="50.0" z="0.0"/>
+            </instance>
+        </population>
 
 
 
             <!--There are no synaptic connections present in the network-->
 
 
-        <explicitInput target="Gran[0]" input="Gran_10pA"/>
+        <inputList id="Gran_10pA" component="Gran_10pA" population="Gran">
+                <input id="0" target="../Gran/0/Granule_98" destination="synapses"/>
+            </inputList>
 
     </network>
 
