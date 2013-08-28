@@ -38,7 +38,7 @@
             <Line id="Gran_v" timeScale="1s" quantity="Gran/0/Granule_98/v" scale="1 V" color="#000000"/>
         </Display>
     
-        <OutputFile id="Gran_v_OF" fileName="/home/padraig/neuroConstruct/osb/cerebellum/cerebellar_granule_cell/GranuleCell/neuroConstruct/simulations/Sim_685/Gran_0.dat">
+        <OutputFile id="Gran_v_OF" fileName="Gran_0.dat">
             <OutputColumn id="v" quantity="Gran/0/Granule_98/v"/>
         </OutputFile>
     </Component>
