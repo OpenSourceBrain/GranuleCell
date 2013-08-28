@@ -39,13 +39,13 @@
            <meta:fullTitle>Maex, R and De Schutter, E. 
            Synchronization of Golgi and Granule Cell Firing in a Detailed Network Model of the 
            cerebellar Granule Cell Layer. J Neurophysiol, Nov 1998; 80: 2521 - 2537</meta:fullTitle>
-           <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=9819260&amp;dopt=Abstract</meta:pubmedRef>
+           <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/9819260</meta:pubmedRef>
         </meta:publication>
         
         
         <meta:neuronDBref>
         <meta:modelName>Receptor properties</meta:modelName>
-            <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/receptors2.asp</meta:uri>
+            <meta:uri>http://senselab.med.yale.edu/neurondb/receptors.aspx</meta:uri>
         </meta:neuronDBref>
         
         

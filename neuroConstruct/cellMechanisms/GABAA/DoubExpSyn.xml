@@ -21,7 +21,7 @@
         
         <meta:neuronDBref>
         <meta:modelName>Receptor properties</meta:modelName>
-            <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/receptors2.asp</meta:uri>
+            <meta:uri>http://senselab.med.yale.edu/neurondb/receptors.aspx</meta:uri>
         </meta:neuronDBref>
         
         <doub_exp_syn max_conductance="3.14159E-10" rise_time="3.1E-4" decay_time="0.0088333" reversal_potential="-0.07"/>
