@@ -3,7 +3,7 @@
 
 <notes>
 
-Network structure (NeuroML 2beta) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 16:46:41, 28-Aug-13
+Network structure (NeuroML 2beta1) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 17:13:10, 02-Sep-13
 
 Cell Group: Gran contains 1 cells
 
@@ -21,7 +21,7 @@ Cell Group: Gran contains 1 cells
 
         <population id="Gran" component="Granule_98" type="populationList">
             <instance id="0">
-                <location x="95.170135" y="50.0" z="0.0"/>
+                <location x="36.180305" y="50.0" z="0.0"/>
             </instance>
         </population>
 

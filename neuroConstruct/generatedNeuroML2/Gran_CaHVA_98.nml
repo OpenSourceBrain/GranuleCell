@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/master/Schemas/NeuroML2/NeuroML_v2beta.xsd" id="Gran_CaHVA_98">
+<?xml version="1.0" encoding="iso-8859-1"?><neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/master/Schemas/NeuroML2/NeuroML_v2beta.xsd" id="Gran_CaHVA_98">
 
     <notes>A channel from Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in a 
     Detailed Network Model of the Cerebellar Granule Cell Layer</notes>
@@ -57,7 +56,10 @@
 
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="(v - offset) / VOLT_SCALE"/>
-            <DerivedVariable name="r" exposure="r" dimension="per_time" value="( 5.0 ) / TIME_SCALE" valueCondition="V   .lt. ( -0.060 )" valueIfFalse="( 5 * (exp (-50 * (V - (-0.060))))) / TIME_SCALE"/>
+            <ConditionalDerivedVariable name="r" exposure="r" dimension="per_time">
+                <Case condition="V   .lt. ( -0.060 )" value="( 5.0 ) / TIME_SCALE"/>
+                <Case value="( 5 * (exp (-50 * (V - (-0.060))))) / TIME_SCALE"/>
+            </ConditionalDerivedVariable>
         </Dynamics>
 
     </ComponentType>
@@ -69,7 +71,10 @@
 
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="(v - offset) / VOLT_SCALE"/>
-            <DerivedVariable name="r" exposure="r" dimension="per_time" value="( 0 ) / TIME_SCALE" valueCondition="V   .lt. ( -0.060 )" valueIfFalse="( 5 - (5 * (exp (-50 * (V - (-0.060)))))) / TIME_SCALE"/>
+            <ConditionalDerivedVariable name="r" exposure="r" dimension="per_time">
+                <Case condition="V   .lt. ( -0.060 )" value="( 0 ) / TIME_SCALE"/>
+                <Case value="( 5 - (5 * (exp (-50 * (V - (-0.060)))))) / TIME_SCALE"/>
+            </ConditionalDerivedVariable>
         </Dynamics>
 
     </ComponentType>
