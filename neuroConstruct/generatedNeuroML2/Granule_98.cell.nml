@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="Granule_98">
 
-    <include href="Gran_CaHVA_98.nml"/>
+    <include href="Gran_CaHVA_98.channel.nml"/>
 
-    <include href="Gran_CaPool_98.nml"/>
+    <include href="Gran_CaPool_98.channel.nml"/>
 
-    <include href="Gran_H_98.nml"/>
+    <include href="Gran_H_98.channel.nml"/>
 
-    <include href="Gran_KA_98.nml"/>
+    <include href="Gran_KA_98.channel.nml"/>
 
-    <include href="Gran_KCa_98.nml"/>
+    <include href="Gran_KCa_98.channel.nml"/>
 
-    <include href="Gran_KDr_98.nml"/>
+    <include href="Gran_KDr_98.channel.nml"/>
 
-    <include href="Gran_NaF_98.nml"/>
+    <include href="Gran_NaF_98.channel.nml"/>
 
-    <include href="GranPassiveCond.nml"/>
+    <include href="GranPassiveCond.channel.nml"/>
 
     <cell id="Granule_98">
 
