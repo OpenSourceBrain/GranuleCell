@@ -1,5 +1,9 @@
 /neuroConstruct/generatedNeuroML2/LEMS_GranuleCell.xml
 /neuroConstruct/generatedNeuroML2/runsim.sh
+/neuroConstruct/generatedNeuroML2/*.hoc
+/neuroConstruct/generatedNeuroML2/*.mod
+/neuroConstruct/generatedNeuroML2/*_nrn.py
+/neuroConstruct/generatedNeuroML2/*.log
 
 *.pyc
 *i686
@@ -12,3 +16,4 @@ generatedPSICS
 simulations
 *.bak
 *py.class
+
