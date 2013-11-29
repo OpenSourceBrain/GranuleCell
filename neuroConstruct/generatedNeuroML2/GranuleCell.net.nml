@@ -3,7 +3,7 @@
 
     <notes>
 
-Network structure (NeuroML 2beta1) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 15:52:15, 01-Nov-13
+Network structure (NeuroML 2beta1) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 16:55:04, 29-Nov-13
 
 Cell Group: Gran contains 1 cells
 
@@ -13,14 +13,14 @@ Cell Group: Gran contains 1 cells
 
 
     <include href="Granule_98.cell.nml"/>
-    <include href="Gran_NaF_98.channel.nml"/>
     <include href="Gran_KA_98.channel.nml"/>
     <include href="GranPassiveCond.channel.nml"/>
     <include href="Gran_KCa_98.channel.nml"/>
-    <include href="Gran_H_98.channel.nml"/>
     <include href="Gran_KDr_98.channel.nml"/>
-    <include href="Gran_CaHVA_98.channel.nml"/>
     <include href="Gran_CaPool_98.nml"/>
+    <include href="Gran_H_98.channel.nml"/>
+    <include href="Gran_NaF_98.channel.nml"/>
+    <include href="Gran_CaHVA_98.channel.nml"/>
 
     <pulseGenerator id="Gran_10pA" delay="0.1s" duration="0.5s" amplitude="1.0E-11A"/>
 
@@ -29,9 +29,9 @@ Cell Group: Gran contains 1 cells
 
         
 
-        <population id="Gran" component="Granule_98" type="populationList">
+        <population id="Gran" component="Granule_98" type="populationList" size="1">
             <instance id="0">
-                <location x="36.180305" y="50.0" z="0.0"/>
+                <location x="15.5626" y="50.0" z="0.0"/>
             </instance>
         </population>
 

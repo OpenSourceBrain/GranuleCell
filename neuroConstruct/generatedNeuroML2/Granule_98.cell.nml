@@ -49,9 +49,6 @@
 
             <membraneProperties>
 
-                <channelDensity condDensity="0.0330033 mS_per_cm2" id="GranPassiveCond_all" ionChannel="GranPassiveCond" erev="-65.0 mV" ion="non_specific">    <!--Note: Units of extra parameters are not known, except if it's e or erev!!-->
-</channelDensity>
-
                 <channelDensity condDensity="0.9084216 mS_per_cm2" id="Gran_CaHVA_98_all" ionChannel="Gran_CaHVA_98" ion="ca" erev="80.0 mV"/>
 
                 <channelDensity condDensity="0.03090506 mS_per_cm2" id="Gran_H_98_all" ionChannel="Gran_H_98" ion="h" erev="-42.0 mV"/>
@@ -63,6 +60,8 @@
                 <channelDensity condDensity="8.89691 mS_per_cm2" id="Gran_KDr_98_all" ionChannel="Gran_KDr_98" ion="k" erev="-90.0 mV"/>
 
                 <channelDensity condDensity="55.7227 mS_per_cm2" id="Gran_NaF_98_all" ionChannel="Gran_NaF_98" ion="na" erev="55.0 mV"/>
+
+                <channelDensity condDensity="0.0330033 mS_per_cm2" id="GranPassiveCond_all" ionChannel="GranPassiveCond" erev="-65.0 mV" ion="non_specific"/>
 
                 <spikeThresh value="0 mV"/>
 
