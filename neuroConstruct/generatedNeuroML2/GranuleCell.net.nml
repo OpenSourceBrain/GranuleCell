@@ -3,7 +3,7 @@
 
     <notes>
 
-Network structure (NeuroML 2beta1) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 16:55:04, 29-Nov-13
+Network structure (NeuroML 2beta1) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 11:40:13, 03-Dec-13
 
 Cell Group: Gran contains 1 cells
 
@@ -12,17 +12,17 @@ Cell Group: Gran contains 1 cells
     </notes>
 
 
-    <include href="Granule_98.cell.nml"/>
-    <include href="Gran_KA_98.channel.nml"/>
-    <include href="GranPassiveCond.channel.nml"/>
-    <include href="Gran_KCa_98.channel.nml"/>
-    <include href="Gran_KDr_98.channel.nml"/>
+    <include href="Gran_CaHVA_98.channel.nml"/>
     <include href="Gran_CaPool_98.nml"/>
     <include href="Gran_H_98.channel.nml"/>
+    <include href="Gran_KA_98.channel.nml"/>
+    <include href="Gran_KCa_98.channel.nml"/>
+    <include href="Gran_KDr_98.channel.nml"/>
     <include href="Gran_NaF_98.channel.nml"/>
-    <include href="Gran_CaHVA_98.channel.nml"/>
+    <include href="GranPassiveCond.channel.nml"/>
+    <include href="Granule_98.cell.nml"/>
 
-    <pulseGenerator id="Gran_10pA" delay="0.1s" duration="0.5s" amplitude="1.0E-11A"/>
+    <pulseGenerator id="Gran_10pA" delay="100.0ms" duration="500.0ms" amplitude="1.0E-5uA"/>
 
     
     <network id="network_GranuleCell" type="networkWithTemperature" temperature="32.0 degC">
@@ -31,7 +31,7 @@ Cell Group: Gran contains 1 cells
 
         <population id="Gran" component="Granule_98" type="populationList" size="1">
             <instance id="0">
-                <location x="15.5626" y="50.0" z="0.0"/>
+                <location x="64.65821" y="50.0" z="0.0"/>
             </instance>
         </population>
 
@@ -41,8 +41,8 @@ Cell Group: Gran contains 1 cells
 
 
         <inputList id="Gran_10pA" component="Gran_10pA" population="Gran">
-                <input id="0" target="../Gran/0/Granule_98" destination="synapses"/>
-            </inputList>
+            <input id="0" target="../Gran/0/Granule_98" destination="synapses"/>
+        </inputList>
 
 
 
