@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="network_GranuleCell">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="network_GranuleCell">
 
     <notes>
 
-Network structure (NeuroML 2beta2) for project: GranuleCell saved with neuroConstruct v1.7.0 on: 14:12:52, 05-Mar-14
+Network structure (NeuroML 2beta3) for project: GranuleCell saved with neuroConstruct v1.7.1 on: 13:56:24, 17-Mar-14
 
 Cell Group: Gran contains 1 cells
 
