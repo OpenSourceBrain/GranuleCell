@@ -17,7 +17,7 @@
 
     <include href="GranPassiveCond.channel.nml"/>
 
-    <cell id="Granule_98">
+    <cell id="Granule_98" neuroLexId="nifext_128">
 
         <notes>An implementation using ChannelML of the Granule cell mode from Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in a Detailed Network Model of the Cerebellar Granule Cell Layer, 1998</notes>
 
