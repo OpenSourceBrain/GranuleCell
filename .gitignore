@@ -1,4 +1,5 @@
 /neuroConstruct/generatedNeuroML2/*.dat
+/neuroConstruct/generatedNeuroML2/*.dat.lems
 /neuroConstruct/generatedNeuroML2/*.props
 /neuroConstruct/generatedNeuroML2/runsim.sh
 /neuroConstruct/generatedNeuroML2/*.hoc
