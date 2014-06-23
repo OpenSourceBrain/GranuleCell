@@ -2,3 +2,16 @@
 # Still in development, subject to change without notice!!
 target: LEMS_GranuleCell.xml 
 engine: jNeuroML
+implements:
+  mep: .test.mep
+  experiment: Current clamp
+  observables:
+    spike times:
+      file: 
+        path: Gran_0.dat
+        columns: [0,1]
+        scaling: [1000, 1000]
+      spike detection: 
+        method: threshold
+        threshold: 0
+      tolerance: 0
