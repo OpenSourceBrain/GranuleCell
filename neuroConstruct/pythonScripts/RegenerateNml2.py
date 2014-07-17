@@ -19,4 +19,15 @@ simConfigs.append("Default Simulation Configuration")
 
 nc.generateNeuroML2(projFile, simConfigs)
 
+# Some extra files have been committed for testing or to provide other LEMS/NeuroML 2 examples
+# This just pulls them from the repository, since they get wiped by the generateNeuroML2 function 
+extra_files = ['.test.*']
+if len(sys.argv)==2 and sys.argv[1] == "-f":
+    extra_files.append('GranuleCell.net.nml')
+    extra_files.append('LEMS_GranuleCell.xml')
+    
+from subprocess import call
+for f in extra_files:
+    call(["git", "checkout", "../generatedNeuroML2/%s"%f])
+
 quit()
