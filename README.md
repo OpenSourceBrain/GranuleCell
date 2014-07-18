@@ -3,3 +3,5 @@ Synchronization of Golgi and Granule Cell Firing in a Detailed Network Model of 
 Granule Cell Layer J Neurophysiol, Nov 1998
 
 For more details see: http://opensourcebrain.org/projects/granulecell
+
+[![Build Status](https://travis-ci.org/OpenSourceBrain/GranuleCell.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/GranuleCell)
