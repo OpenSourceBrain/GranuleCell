@@ -1,3 +1,4 @@
+/neuroConstruct/generatedNeuroML2/clean.sh
 /neuroConstruct/generatedNeuroML2/*.dat
 /neuroConstruct/generatedNeuroML2/*.dat.lems
 /neuroConstruct/generatedNeuroML2/*.props

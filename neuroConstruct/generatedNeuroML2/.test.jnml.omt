@@ -1,6 +1,7 @@
-# Script for running automated tests on OSB using Travis-CI, see https://github.com/borismarin/osb-model-validation  
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
 # Still in development, subject to change without notice!!
-target: LEMS_GranuleCell.xml 
+
+target: LEMS_GranuleCell_LowDt.xml 
 engine: jNeuroML
 implements:
   mep: .test.mep
@@ -14,4 +15,4 @@ implements:
       spike detection: 
         method: threshold
         threshold: 0
-      tolerance: 0
+      tolerance: 0.02   # large tolerance due to inaccuracy of jLEMS's simple numerical integration methods
