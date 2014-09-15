@@ -11,6 +11,8 @@
 *.pyc
 *i686
 *x86_64
+umac
+i386
 generatedNEURON
 generatedGENESIS
 generatedMOOSE
