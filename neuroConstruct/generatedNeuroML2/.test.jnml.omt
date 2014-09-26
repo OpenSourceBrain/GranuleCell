@@ -15,4 +15,4 @@ experiments:
         spike detection: 
           method: threshold
           threshold: 0
-        tolerance: 0.02   # large tolerance due to inaccuracy of jLEMS's simple numerical integration methods
+        tolerance: 0.0142   # large tolerance due to inaccuracy of jLEMS's simple numerical integration methods
