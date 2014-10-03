@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="Gran_NaF_98">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Gran_NaF_98">
 
     <notes>A channel from Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in a 
     Detailed Network Model of the Cerebellar Granule Cell Layer</notes>
@@ -34,21 +34,21 @@
             </rdf:RDF>
         </annotation>
 
-        <gate id="m" type="gateHHratesTau" instances="3">
+        <gateHHratesTau id="m" instances="3">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
             <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
             <forwardRate type="HHExpRate" rate="1500per_s" scale="0.012345679V" midpoint="-0.028999999999999998V"/>
             <reverseRate type="HHExpRate" rate="1500per_s" scale="-0.0151515V" midpoint="-0.028999999999999998V"/>
             <timeCourse type="Gran_NaF_98_m_tau_tau"/>
-        </gate>
+        </gateHHratesTau>
 
-        <gate id="h" type="gateHHratesTau" instances="1">
+        <gateHHratesTau id="h" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
             <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
             <forwardRate type="HHExpRate" rate="120per_s" scale="-0.01123596V" midpoint="-0.04V"/>
             <reverseRate type="HHExpRate" rate="120per_s" scale="0.01123596V" midpoint="-0.04V"/>
             <timeCourse type="Gran_NaF_98_h_tau_tau"/>
-        </gate>
+        </gateHHratesTau>
                             
     </ionChannel>
 
@@ -64,6 +64,7 @@
             <DerivedVariable name="ALPHA" dimension="none" value="alpha * TIME_SCALE"/>
             <DerivedVariable name="BETA" dimension="none" value="beta * TIME_SCALE"/>
             <ConditionalDerivedVariable name="t" exposure="t" dimension="time">
+                <Case condition="(ALPHA + BETA) .eq. 0" value="( 0 ) * TIME_SCALE"/>
                 <Case condition="1/(ALPHA + BETA)  .lt. ( 0.00005 )" value="( 0.00005 ) * TIME_SCALE"/>
                 <Case value="( 1/(ALPHA + BETA)) * TIME_SCALE"/>
             </ConditionalDerivedVariable>
@@ -83,6 +84,7 @@
             <DerivedVariable name="ALPHA" dimension="none" value="alpha * TIME_SCALE"/>
             <DerivedVariable name="BETA" dimension="none" value="beta * TIME_SCALE"/>
             <ConditionalDerivedVariable name="t" exposure="t" dimension="time">
+                <Case condition="(ALPHA + BETA) .eq. 0" value="( 0 ) * TIME_SCALE"/>
                 <Case condition="1/(ALPHA + BETA)  .lt. ( 0.000225 )" value="( 0.000225 ) * TIME_SCALE"/>
                 <Case value="( 1/(ALPHA + BETA)) * TIME_SCALE"/>
             </ConditionalDerivedVariable>
