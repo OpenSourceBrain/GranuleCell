@@ -1,3 +1,4 @@
+/.gitignore~
 /neuroConstruct/generatedNeuroML2/generate_if.py~
 /neuroConstruct/generatedNeuroML2/iv_Granule_98.net.nml
 /neuroConstruct/generatedNeuroML2/LEMS_iv_Granule_98.xml
@@ -10,6 +11,8 @@
 /neuroConstruct/generatedNeuroML2/*.mod
 /neuroConstruct/generatedNeuroML2/*_nrn.py
 /neuroConstruct/generatedNeuroML2/*.log
+/neuroConstruct/generatedNeuroML2/*.geppetto*
+/neuroConstruct/generatedNeuroML2/*.js
 
 *.pyc
 *i686
