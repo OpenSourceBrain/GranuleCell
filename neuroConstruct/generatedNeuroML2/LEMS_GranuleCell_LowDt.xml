@@ -30,7 +30,7 @@
 
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
-    <Component type="Simulation" id="sim1" length="700.0ms" step="0.0025ms" target="network_GranuleCell">
+    <Component type="Simulation" id="sim1" length="700.0ms" step="0.001ms" target="network_GranuleCell">
         
         <Display id="GraphWin_0" title="GranuleCell: Default Simulation Configuration, Gran, VOLTAGE" xmin="-70.0" xmax="770.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
             <Line id="VOLTAGE" timeScale="1ms" quantity="Gran/0/Granule_98/v" scale="1 mV" color="#000000"/>

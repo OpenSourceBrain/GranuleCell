@@ -15,4 +15,15 @@ experiments:
         spike detection: 
           method: threshold
           threshold: 0
-        tolerance: 0.0142   # large tolerance due to inaccuracy of jLEMS's simple numerical integration methods
+        tolerance: 0.00506   #  relatively large tolerance due to inaccuracy of jLEMS's simple numerical integration methods
+  Ca concentration:
+    observables:
+      spike times:
+        file: 
+          path: Gran_0.Gran_CaPool_98_CONC_ca.dat
+          columns: [0,1]
+          scaling: [1000, 1]
+        spike detection: 
+          method: threshold
+          threshold: 0.0016
+        tolerance: 0.00502
