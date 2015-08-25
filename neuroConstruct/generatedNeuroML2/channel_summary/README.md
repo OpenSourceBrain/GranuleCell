@@ -1,6 +1,7 @@
     
-    <body>
-        <p>Channel information at: T = 6.3 degC, E_rev = 0 mV, [Ca2+] = 5e-05 mM</p>
+
+Channel information at: T = 6.3 degC, E_rev = 0 mV, [Ca2+] = 5e-05 mM
+
         <table>
             <tr>
         <td width="130px">
@@ -29,6 +30,5 @@
         </td>
         </tr>
         </table>
-    </body>
-
-</html>
+        
+The end
