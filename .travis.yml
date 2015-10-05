@@ -1,5 +1,4 @@
 # Framework for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
-# Still in development, subject to change without notice!!
 
 language: python
 python: 2.7
@@ -14,7 +13,7 @@ install:
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
 
 script:
-    - omv all
+    - omv all -V
     
     
     
