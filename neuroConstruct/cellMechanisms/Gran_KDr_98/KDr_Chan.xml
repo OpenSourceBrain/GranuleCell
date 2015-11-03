@@ -45,7 +45,7 @@
 
         <meta:neuronDBref>
             <meta:modelName>K channels</meta:modelName>
-            <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/channelGene2.htm#table3</meta:uri>
+            <meta:uri>http://senselab.med.yale.edu/neurondb/channelGene2.aspx#table3</meta:uri>
         </meta:neuronDBref>
     
         

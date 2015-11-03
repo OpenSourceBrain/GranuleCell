@@ -48,7 +48,7 @@
 
         <meta:neuronDBref>
             <meta:modelName>Na channels</meta:modelName>
-            <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/channelGene2.htm#table2</meta:uri>
+            <meta:uri>http://senselab.med.yale.edu/neurondb/channelGene2.aspx#table2</meta:uri>
         </meta:neuronDBref>
         
         <current_voltage_relation cond_law="ohmic" ion="na" default_gmax="546.301" default_erev="0.055">
