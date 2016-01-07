@@ -8,6 +8,9 @@ Granule Cell Layer](http://www.ncbi.nlm.nih.gov/pubmed/9819260) J Neurophysiol, 
 For more details see: http://opensourcebrain.org/projects/granulecell
 
 [![Build Status](https://travis-ci.org/OpenSourceBrain/GranuleCell.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/GranuleCell)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.44423.svg)](http://dx.doi.org/10.5281/zenodo.44423)
+
+
 
 #### Installation
 
