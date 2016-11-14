@@ -1,0 +1,29 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+# Still in development, subject to change without notice!!
+
+target: LEMS_GranuleCell_LowDt.xml 
+engine: jNeuroML_NetPyNE
+mep: .test.mep
+experiments:
+  Current clamp:
+    observables:
+      spike times:
+        file: 
+          path: Gran_0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 0.0000
+  Ca concentration:
+    observables:
+      spike times:
+        file: 
+          path: Gran_0.Gran_CaPool_98_CONC_ca.dat
+          columns: [0,1]
+          scaling: [1000, 1]
+        spike detection: 
+          method: threshold
+          threshold: 0.0016
+        tolerance: 0.0000
