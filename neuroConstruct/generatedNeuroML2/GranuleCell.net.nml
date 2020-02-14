@@ -26,7 +26,8 @@ Cell Group: Gran contains 1 cells
 
     
     <network id="network_GranuleCell" type="networkWithTemperature" temperature="32.0 degC">
-
+        <property tag="recommended_dt_ms" value="0.025"/>
+        <property tag="recommended_duration_ms" value="700.0"/>
         
 
         <population id="Gran" component="Granule_98" type="populationList" size="1">
