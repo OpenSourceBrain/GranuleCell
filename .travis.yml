@@ -1,4 +1,6 @@
-sudo: false
+# Framework for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+
+dist: xenial
 
 addons:
    apt:
@@ -10,14 +12,11 @@ addons:
      - python-matplotlib 
      - python-tornado
     
-
 language: python
-python: 2.7
+python: 3.6
 
- 
 virtualenv:
    system_site_packages: true
-
 
 env:
     - OMV_ENGINE=jNeuroML
@@ -33,6 +32,7 @@ script:
     - omv all -V
     - cd neuroConstruct/generatedNeuroML2
     - ls -alt
+    - omv list -V 
     
     
     
