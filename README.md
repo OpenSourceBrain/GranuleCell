@@ -1,5 +1,7 @@
 ## Cerebellar Granule cell model - Maex and De Schutter, 1998
 
+[![Continuous build using OMV](https://github.com/OpenSourceBrain/GranuleCell/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/GranuleCell/actions/workflows/omv-ci.yml)
+
 
 A project containing an implementation of the Granule Cell model from: Maex, R and De Schutter, E. 
 [Synchronization of Golgi and Granule Cell Firing in a Detailed Network Model of the Cerebellar 
@@ -7,13 +9,9 @@ Granule Cell Layer](http://www.ncbi.nlm.nih.gov/pubmed/9819260) J Neurophysiol, 
 
 For more details see: http://opensourcebrain.org/projects/granulecell
 
-[![Build Status](https://travis-ci.org/OpenSourceBrain/GranuleCell.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/GranuleCell)
-
 Latest stable release:
 
 [![DOI](https://zenodo.org/badge/7832/OpenSourceBrain/GranuleCell.svg)](https://zenodo.org/badge/latestdoi/7832/OpenSourceBrain/GranuleCell)
-
-
 
 
 
