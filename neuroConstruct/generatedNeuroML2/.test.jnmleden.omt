@@ -1,7 +1,7 @@
 # Script for running automated tests on OSB models, see https://github.com/OpenSourceBrain/osb-model-validation
 
 target: LEMS_GranuleCell_LowDt.xml 
-engine: jNeuroML_NEURON
+engine: jNeuroML_EDEN
 mep: .test.mep
 experiments:
   Current clamp:
@@ -14,7 +14,7 @@ experiments:
         spike detection: 
           method: threshold
           threshold: 0
-        tolerance: 0.0000
+        tolerance: 0.0009466311169226317
   Ca concentration:
     observables:
       spike times:
@@ -25,4 +25,4 @@ experiments:
         spike detection: 
           method: threshold
           threshold: 0.0016
-        tolerance: 0.0000
+        tolerance: 0.0009426209285668374

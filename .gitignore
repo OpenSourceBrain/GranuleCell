@@ -31,3 +31,5 @@ simulations
 /neuroConstruct/generatedNeuroML2/LEMS_GranuleCell_LowDt_netpyne.py
 /neuroConstruct/generatedNeuroML2/LEMS_GranuleCell_LowDt_netpyne.py_main.json
 arm64
+*_eden.py
+*code.gen.*
