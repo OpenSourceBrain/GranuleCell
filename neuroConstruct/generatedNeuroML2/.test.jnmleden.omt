@@ -14,7 +14,7 @@ experiments:
         spike detection: 
           method: threshold
           threshold: 0
-        tolerance: 0.0009466311169226317
+        tolerance: 0.0009466481426621017
   Ca concentration:
     observables:
       spike times:
