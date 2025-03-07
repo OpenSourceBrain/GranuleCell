@@ -40,6 +40,18 @@ NeuroML2 file: <a href="../Gran_KCa_98.channel.nml">Gran_KCa_98.channel.nml</a><
 </div>
 </div>
 
+<h2>Gran_KDr_98</h2>
+
+Ion: <b>k</b> |
+Conductance expression: <b>g = gmax * m<sup>4</sup> * h </b> |
+NeuroML2 file: <a href="../Gran_KDr_98.channel.nml">Gran_KDr_98.channel.nml</a></div>
+<details><summary>Notes</summary>Delayed rectifyer K channel</details>
+
+<div><a href="Gran_KDr_98.inf.png"><img alt="Gran_KDr_98 steady state" src="Gran_KDr_98.inf.png" width="350" style="padding:10px 35px 10px 0px"/></a>
+<a href="Gran_KDr_98.tau.png"><img alt="Gran_KDr_98 time course" src="Gran_KDr_98.tau.png" width="350" style="padding:10px 10px 10px 0px"/></a>
+</div>
+</div>
+
 <h2>Gran_CaHVA_98</h2>
 
 Ion: <b>ca</b> |
@@ -49,5 +61,17 @@ NeuroML2 file: <a href="../Gran_CaHVA_98.channel.nml">Gran_CaHVA_98.channel.nml<
 
 <div><a href="Gran_CaHVA_98.inf.png"><img alt="Gran_CaHVA_98 steady state" src="Gran_CaHVA_98.inf.png" width="350" style="padding:10px 35px 10px 0px"/></a>
 <a href="Gran_CaHVA_98.tau.png"><img alt="Gran_CaHVA_98 time course" src="Gran_CaHVA_98.tau.png" width="350" style="padding:10px 10px 10px 0px"/></a>
+</div>
+</div>
+
+<h2>Gran_H_98</h2>
+
+Ion: <b>h</b> |
+Conductance expression: <b>g = gmax * n </b> |
+NeuroML2 file: <a href="../Gran_H_98.channel.nml">Gran_H_98.channel.nml</a></div>
+<details><summary>Notes</summary>Anomalous inward rectifying H conductance</details>
+
+<div><a href="Gran_H_98.inf.png"><img alt="Gran_H_98 steady state" src="Gran_H_98.inf.png" width="350" style="padding:10px 35px 10px 0px"/></a>
+<a href="Gran_H_98.tau.png"><img alt="Gran_H_98 time course" src="Gran_H_98.tau.png" width="350" style="padding:10px 10px 10px 0px"/></a>
 </div>
 </div>
